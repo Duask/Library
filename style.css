@@ -1,0 +1,181 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.head{
+    border-bottom: 3px solid dodgerblue;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg{
+    width: 70px;
+    fill: black;
+}
+
+.add {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    margin-right: 60px;
+}
+
+.add:hover{
+    color: dodgerblue;
+}
+
+.add:active{
+    color: lightskyblue;
+}
+
+#content {
+    background-color: aliceblue;
+    flex: 1;
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#content .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
+    min-height: 400px;
+    padding: 40px 80px;
+    gap: 30px;
+}
+
+.book-card {
+    font-size: 1.5rem;
+    height: 400px;
+    background-color: white;
+    border: 6px solid dodgerblue;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.book-card span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: crimson;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 50);
+    padding: 5px;
+}
+
+.form-access {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#book-add {
+    background-color: white;
+    padding: 20px 40px;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#book-add div + div {
+    margin-top: 25px;
+}
+
+.field {
+    font-size: 1.5rem;
+}
+
+.field label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+    
+}
+
+.field input[type=text],
+.field input[type=number] {
+    width: 250px;
+}
+
+.field input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+}
+
+.upload {
+    margin-left: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    
+}
+
+.upload:active {
+    background-color: lightskyblue;
+}
+
+.exit {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    position: relative;
+    top: 10px;
+}
+
+.book-read {
+    margin-top: 40px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px 30px;
+    color: whitesmoke;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+button.readed {
+    background-color: greenyellow;
+    color: black;
+}
